@@ -1,0 +1,78 @@
+* {
+  color: chocolate;
+}
+
+.container {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: chocolate;
+  font-size: 24px;
+  background-color: rgb(255, 245, 231);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease-in-out;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 20px;
+  width: 50%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+::placeholder {
+  color: rgb(112, 91, 65);
+  opacity: 1; /* Firefox */
+}
+
+button {
+  padding: 10px 20px;
+  border: 1px solid chocolate;
+  border-radius: 5px;
+  background-color: rgb(255, 241, 212);
+  color: chocolate;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(250, 233, 203);
+  color: chocolate;
+  transition: background-color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  border: 1px solid chocolate;
+}
+
+textarea {
+  width: 235px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: rgb(112, 91, 65);
+  font-size: 16px;
+  margin: 5px;
+}
+
+li {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  width: 25%;
+  text-align: center;
+  background-color: rgb(255, 245, 231);
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
