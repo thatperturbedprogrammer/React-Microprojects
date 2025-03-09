@@ -64,6 +64,24 @@ section {
   cursor: pointer;
 }
 
+.reload-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.reload-btn {
+  font-family: cursive;
+  width: fit-content;
+  padding: 10px;
+  background: rgb(37, 124, 238);
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
 .clear-btn:disabled {
   background: gray;
   cursor: not-allowed;
