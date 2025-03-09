@@ -1,0 +1,23 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* background: linear-gradient(135deg, #ffb884, #ff9a76, #ff7b60, #e75a5a); */
+  /* background: linear-gradient(90deg, #ffd6a5, #ffb67a, #ff9966); */
+
+  background: linear-gradient(
+    120deg,
+    rgba(255, 184, 132, 0.8),
+    rgba(255, 154, 118, 0.8)
+  );
+}
