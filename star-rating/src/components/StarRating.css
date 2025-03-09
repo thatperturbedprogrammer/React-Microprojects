@@ -1,0 +1,21 @@
+.star-rating-container {
+  display: flex;
+  gap: 8px;
+}
+
+.star {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  transition: color 0.2s ease-in;
+}
+
+.star-filled {
+  fill: rgb(247, 247, 88);
+  color: rgb(255, 255, 0);
+}
+
+.star-empty {
+  fill: rgb(130, 130, 130);
+  color: rgb(92, 91, 91);
+}
