@@ -16,7 +16,6 @@ export default function BirthdaysList({ url, limit }) {
       }
     } catch (error) {
       console.log("Fetch error: ", error);
-      setLoading(false);
     } finally {
       setLoading(false);
     }
@@ -24,6 +23,19 @@ export default function BirthdaysList({ url, limit }) {
   useEffect(() => {
     fetchPeople();
   }, [url, limit]);
+
+  {
+    /* If cleared */
+  }
+  if (people.length === 0) {
+    return (
+      <div className="reload-div">
+        <button className="reload-btn" onClick={fetchPeople}>
+          {loading ? "Loading..." : "Reload"}
+        </button>
+      </div>
+    );
+  }
   return (
     <>
       <main className="main-container">
