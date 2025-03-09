@@ -1,0 +1,88 @@
+/* Main container */
+.main-container {
+  width: 80%;
+  margin: 20px auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Products container */
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-top: 20px;
+}
+
+/* Product card */
+.products-list {
+  background: linear-gradient(145deg, #1e1e1e, #292929);
+  border: 2px solid #444;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3),
+    -5px -5px 15px rgba(255, 255, 255, 0.05);
+  padding: 15px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  color: #dddddd;
+  border-radius: 10px;
+}
+
+.products-list:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 87, 51, 0.7);
+  cursor: pointer;
+}
+
+/* Product image */
+.products-list img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 10px;
+  background: #333;
+  padding: 10px;
+}
+
+/* Product title */
+.products-list h3 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #ffffff;
+}
+
+/* Product price */
+.products-list h5 {
+  font-size: 16px;
+  color: #ff5733;
+  margin-bottom: 5px;
+}
+
+/* Product rating */
+.products-list p {
+  font-size: 14px;
+  color: #a1a1a1;
+}
+
+/* Load More button */
+button {
+  background: linear-gradient(90deg, #ff5733, #ff2a00);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #ff2a00, #b71c1c);
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(255, 87, 51, 0.8);
+}
