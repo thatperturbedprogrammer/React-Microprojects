@@ -1,0 +1,61 @@
+.main-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+}
+
+label {
+  background-color: #62beff;
+  font-size: large;
+  padding: 5px;
+}
+#editor {
+  background-color: rgb(246, 248, 249);
+  color: #000000;
+  width: 100%;
+  min-height: 150px;
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #00bfff;
+  margin-bottom: 20px;
+}
+
+#preview {
+  border: 1px solid #ebebeb;
+  padding: 15px;
+  background-color: #afdafa;
+  overflow: auto;
+  word-wrap: break-word;
+  max-width: 100%;
+}
+
+pre {
+  background-color: #272822;
+  color: white;
+  padding: 10px;
+  overflow-x: auto;
+  border-radius: 5px;
+}
+
+code {
+  font-family: monospace;
+  white-space: pre-wrap;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
